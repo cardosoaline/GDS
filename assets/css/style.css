@@ -4,51 +4,38 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
+
+html{
+    position: relative;
+}
+
+body{
+    background-color: #101010;
+    color: #fff;
+}
+
 .container{
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 20px;
-}
-
-
-.navbar .container{
-display:flex;
-align-items: center;
-justify-content: center;
-}
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}   
 
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     background-color: #101010;
 }
 
-.menu{
-    list-style: none;
-    display: flex;
-    margin-right: auto;
+.navbar .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-li{
-    margin: 0 24px;
-}
-
-a{
-    font-weight: 300;
-    text-decoration: none;
-    color:#fff;
-    opacity: 0.6;
-}
-
-a:hover{
-    color: #fff;
-    opacity: 1;
-}
-
-.logo{
+.navbar .container .logo{
     display: block;
     margin-right: auto;
     color: #fff;
@@ -56,6 +43,29 @@ a:hover{
     font-size: 24px;
 }
 
+.navbar .container .menu{
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.navbar .container .menu li{
+    margin: 0 24px;
+}
+
+.navbar .container .menu li a{
+    font-weight: 300;
+    text-decoration: none;
+    color:#fff;
+    opacity: 0.6;
+}
+
+.navbar .container .menu li a:hover{
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+/*Fim navbar e começo home*/
 .home .container{
     height: 100vh;
     justify-content: center;
@@ -64,15 +74,14 @@ a:hover{
     align-items: center;
 }
 
-.home #conheca{
+.home .conheca{
     padding: 5px 30px;
     margin: 10px;
     border-radius: 20px 20px;
     cursor: pointer;
-    
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
 }
 
-body{
-    background-color: #101010;
-    color: #fff;
-}
