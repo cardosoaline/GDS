@@ -1,10 +1,11 @@
 .animation-sub-title{
     border-right: 2px solid rgba(255, 255, 255, 255);
     font-size: 32px;
-    margin: 0 auto;
+    margin: 0 auto 27px;
     white-space: nowrap;
     overflow: hidden;   
     text-align: center; 
+    font-weight: 300;
 }
 
 .type-animation {

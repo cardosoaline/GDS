@@ -3,6 +3,9 @@
 
 *{
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -37,6 +40,7 @@ img{
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 17px 20px;
 }
 
 .navbar .container .logo{
@@ -44,7 +48,7 @@ img{
     margin-right: auto;
     color: #fff;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 48px;
 }
 
 .navbar .container .menu{
@@ -55,6 +59,7 @@ img{
 
 .navbar .container .menu li{
     margin: 0 24px;
+    font-size: 16px;
 }
 
 .navbar .container .menu li a{
@@ -78,26 +83,64 @@ img{
     align-items: center;
 }
 
+.home .container h1{
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
 .home .conheca{
-    padding: 5px 30px;
+    padding: 15px 55px;
     margin: 10px;
-    border-radius: 20px 20px;
+    border-radius: 80px;
     cursor: pointer;
     background-color: transparent;
     color: #fff;
     text-transform: uppercase;
     border: 1px solid #fff;
+    font-size: 18px;
 }
-
+/*fim home inicio sobre*/
+.sobre{
+    background-color: #1c1c1c;
+    padding: 50px 0;
+}
 .sobre .container .wrapper {
     display: flex;
     
+}
+
+.sobre .container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 54px;
 }
 
 .sobre .container .wrapper .left,
 .sobre .container .wrapper .right{
  width: 50%;
 }
+.sobre .container .wrapper .left{
+    padding-right: 78px;
+}
 
+.sobre .container .wrapper .left img{
+ border-radius: 20px;
+}
+.sobre .container .wrapper .right{
+    padding: 0 20px;
+}
 
+.sobre .container .wrapper .right p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.sobre .container .wrapper .right ul {
+    list-style: none;
+}
 
