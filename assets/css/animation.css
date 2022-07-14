@@ -1,0 +1,31 @@
+.animation-sub-title{
+    border-right: 2px solid rgba(255, 255, 255, 255);
+    font-size: 32px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;   
+    text-align: center; 
+}
+
+.type-animation {
+    animation:
+     link-cursor 500ms  steps(40) infinite normal,
+     text-animation 4s steps(40) 1s normal both;
+}
+
+@keyframes link-cursor{
+    from{
+       border-right-color:2px solid rgba(255,255,255,.75);
+    }
+    to {
+        border-right-color:transparent;
+    }
+}
+
+@keyframes text-animation {
+    from{
+        width: 0;
+    }to{
+       width: 16em; 
+    }
+}
