@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/animation.css" />
     <title>GDS</title>
@@ -14,14 +15,14 @@
       <div class="container">
         <div class="logo">GDS</div>
         <ul class="menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contatos</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
     </nav>
-    <section class="home">
+    <section id="inicio" class="home">
       <div class="container">
         <h1>GDS</h1>
         <p class="animation-sub-title type-animation">
@@ -31,7 +32,7 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <div class="container">
         <h2>Sobre A GDS</h2>
         <div class="wrapper">
@@ -93,7 +94,7 @@
       </div>
     </section>
 
-    <section class="servicos">
+    <section class="servicos" id="servico">
       <div class="container">
         <h2>Serviços</h2>
         <div class="btn-servicos">
@@ -130,16 +131,65 @@
       </div>
     </section>
 
-    <section class="contato">
+    <section class="contato" id="contato">
       <div class="container">
         <h2>Contato</h2>
         <div class="btn-redes-sociais">
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
-          <button></button>
+          <button class="btn-group btn-email"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Grupo_1" data-name="Grupo 1" transform="translate(-140 -3164)">
+              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+                <rect width="260" height="260" rx="15" stroke="none"/>
+                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+              </g>
+              <path id="at-solid" d="M73.091,17.388A71.233,71.233,0,0,0,17.459,73.05c-8.223,41.918,20.423,79.194,59.232,84.817A9.447,9.447,0,0,0,87.452,148.5v-.2a9.384,9.384,0,0,0-7.985-9.294A52.438,52.438,0,0,1,92.616,35C119.849,37.64,139.8,62.149,139.8,89.5v4.808a11.9,11.9,0,1,1-23.8,0V58.582a4.763,4.763,0,0,0-4.763-4.766H101.72a4.7,4.7,0,0,0-4.5,3.475,32.234,32.234,0,0,0-25.6-1.519A33.315,33.315,0,0,0,82.68,120.52a33,33,0,0,0,20.7-7.4,30.952,30.952,0,0,0,32.546,11.153c13.738-3.185,22.9-16.632,22.634-30.584V87.47A71.184,71.184,0,0,0,73.091,17.388ZM82.4,101.75a14.295,14.295,0,1,1,14.28-14.295A14.129,14.129,0,0,1,82.4,101.75Z" transform="translate(182.694 3207.028)" fill="rgba(255,255,255,0.4)"/>
+            </g>
+          </svg>
+          </button>
+          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Grupo_2" data-name="Grupo 2" transform="translate(-140 -3164)">
+              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(249,244,244,0.4)" stroke-width="3">
+                <rect width="260" height="260" rx="15" stroke="none"/>
+                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+              </g>
+              <path id="whatsapp-brands" d="M111.663,51.084A65.1,65.1,0,0,0,9.234,129.62L0,163.333l34.5-9.058a64.882,64.882,0,0,0,31.1,7.915h.029c35.853,0,65.7-29.2,65.7-65.08,0-17.384-7.387-33.713-19.671-46.025ZM65.637,151.226a54,54,0,0,1-27.557-7.534l-1.964-1.173-20.462,5.365,5.453-19.964-1.29-2.052a54.1,54.1,0,0,1,84.077-67.015c10.2,10.231,16.475,23.8,16.446,38.257C120.34,126.953,95.451,151.226,65.637,151.226ZM95.3,110.712c-1.612-.821-9.615-4.749-11.111-5.277-1.5-.557-2.58-.821-3.664.821s-4.192,5.277-5.16,6.391c-.938,1.085-1.906,1.231-3.518.41-9.557-4.778-15.83-8.531-22.133-19.348-1.671-2.873,1.671-2.668,4.778-8.883a3.014,3.014,0,0,0-.147-2.844c-.41-.821-3.664-8.824-5.013-12.078-1.319-3.166-2.668-2.726-3.664-2.785-.938-.059-2.023-.059-3.107-.059a6.024,6.024,0,0,0-4.339,2.023A18.273,18.273,0,0,0,32.54,82.657c0,8,5.834,15.742,6.625,16.827.821,1.085,11.462,17.5,27.791,24.566,10.319,4.456,14.365,4.837,19.524,4.075,3.137-.469,9.615-3.928,10.964-7.739s1.349-7.065.938-7.739C98,111.914,96.917,111.5,95.3,110.712Z" transform="translate(204.333 3196.333)" fill="rgba(255,255,255,0.4)"/>
+            </g>
+          </svg>
+          
+          </button>
+          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+              <rect width="260" height="260" rx="15" stroke="none"/>
+              <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+            </g>
+          </svg>
+          </button>
+          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Grupo_4" data-name="Grupo 4" transform="translate(-140 -3164)">
+              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+                <rect width="260" height="260" rx="15" stroke="none"/>
+                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+              </g>
+              <path id="linkedin-brands" d="M131.857,32H10.111A10.187,10.187,0,0,0,0,42.238V163.762A10.187,10.187,0,0,0,10.111,174H131.857A10.214,10.214,0,0,0,142,163.762V42.238A10.214,10.214,0,0,0,131.857,32ZM42.917,153.714H21.871V85.947H42.949v67.767ZM32.394,76.692a12.2,12.2,0,1,1,12.2-12.2A12.208,12.208,0,0,1,32.394,76.692Zm89.416,77.022H100.763V120.75c0-7.861-.158-17.972-10.935-17.972-10.967,0-12.647,8.558-12.647,17.4v33.535H56.134V85.947H76.325V95.2h.285c2.821-5.325,9.7-10.935,19.937-10.935,21.3,0,25.262,14.042,25.262,32.3Z" transform="translate(199 3191)" fill="rgba(255,255,255,0.4)"/>
+            </g>
+          </svg>
+          </button>
+          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+              <rect width="260" height="260" rx="15" stroke="none"/>
+              <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+            </g>
+          </svg>
+                        </button>
+          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+            <g id="Grupo_6" data-name="Grupo 6" transform="translate(-140 -3164)">
+              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+                <rect width="260" height="260" rx="15" stroke="none"/>
+                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+              </g>
+              <path id="instagram-square-brands" d="M71,86.252A16.957,16.957,0,1,0,87.913,103.21,16.932,16.932,0,0,0,71,86.252Zm39.529-13.034a17.141,17.141,0,0,0-9.639-9.667c-6.656-2.635-22.5-2.044-29.89-2.044s-23.218-.614-29.893,2.044a17.141,17.141,0,0,0-9.639,9.667C28.844,79.894,29.43,95.8,29.43,103.205s-.586,23.292,2.051,29.99a17.141,17.141,0,0,0,9.639,9.667c6.656,2.635,22.5,2.044,29.893,2.044s23.214.614,29.89-2.044a17.141,17.141,0,0,0,9.639-9.667c2.647-6.676,2.038-22.586,2.038-29.987s.609-23.289-2.038-29.987ZM71,129.276a26,26,0,1,1,18.388-7.626A26.029,26.029,0,0,1,71,129.276ZM98.062,82.132a2.514,2.514,0,1,1,.013.013ZM126.786,32H15.214A15.237,15.237,0,0,0,0,47.259v111.9a15.237,15.237,0,0,0,15.214,15.259H126.786A15.237,15.237,0,0,0,142,159.158V47.259A15.237,15.237,0,0,0,126.786,32Zm-5.426,92.189c-.409,8.148-2.263,15.367-8.194,21.3s-13.122,7.83-21.237,8.218c-8.371.474-33.468.474-41.839,0-8.124-.41-15.3-2.273-21.237-8.218s-7.807-13.167-8.194-21.3c-.472-8.4-.472-33.573,0-41.962.409-8.148,2.241-15.367,8.194-21.3S42,53.121,50.09,52.733c8.371-.474,33.468-.474,41.839,0,8.124.41,15.319,2.273,21.237,8.218s7.807,13.167,8.194,21.315C121.832,90.632,121.832,115.784,121.359,124.189Z" transform="translate(199 3190.792)" fill="rgba(255,255,255,0.4)"/>
+            </g>
+          </svg>
+          </button>
         </div>       
       </div>
     </section>
