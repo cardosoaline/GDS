@@ -13,7 +13,12 @@
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">GDS</div>
+        <a href="./" class="logo">GDS</a>
+
+        <button type="button" id="btMenu">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+
         <ul class="menu">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre">Sobre</a></li>
@@ -28,7 +33,7 @@
         <p class="animation-sub-title type-animation">
           desenvolvimento & tecnologia
         </p>
-        <button class="conheca">Conheça</button>
+        <a href="#sobre" class="conheca">Conheça</a>
       </div>
     </section>
 
@@ -98,22 +103,23 @@
       <div class="container">
         <h2>Serviços</h2>
         <div class="btn-servicos">
-        <button class="btn-blue-services">
-        <!-- Não consegui colocar o icone do celular -->
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="81" viewBox="0 0 78 81">
-          <defs>
-            <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 342 512">
-              <image width="342" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAIACAYAAADZkET0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE7mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuOWNjYzRkZSwgMjAyMi8wMy8xNC0xMToyNjoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjMgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNS0yNFQxOTo1NTo0NS0wMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDUtMjRUMjA6MDA6NDktMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDUtMjRUMjA6MDA6NDktMDM6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg1MDNiMTdlLTljYTUtNDI0NS05ZWZmLWIxYmMzZjAzZDcxMSIgeG1wTU06RG9jdW1lbnRJRD0i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"/>
-            </pattern>
-          </defs>
-          <g id="icon" transform="translate(-576 -2571)">
-            <rect id="impressao-digital" width="34" height="50" transform="translate(598 2586)" fill="url(#pattern)"/>
-            <rect id="Retângulo_4" data-name="Retângulo 4" width="78" height="81" rx="15" transform="translate(576 2571)" fill="rgba(255,255,255,0.2)"/>
-          </g>
-        </svg>
-        <span>Desenvolvimento de Aplicativos Mobile</span>
-        </button>
-           <button class="btn-black-services">
+            <div class="btn-blue-services">
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="81" viewBox="0 0 78 81">
+                <defs>
+                  <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 342 512">
+                    <image width="342" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAIACAYAAADZkET0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE7mlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuOWNjYzRkZSwgMjAyMi8wMy8xNC0xMToyNjoxOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjMgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMi0wNS0yNFQxOTo1NTo0NS0wMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjItMDUtMjRUMjA6MDA6NDktMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDUtMjRUMjA6MDA6NDktMDM6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjg1MDNiMTdlLTljYTUtNDI0NS05ZWZmLWIxYmMzZjAzZDcxMSIgeG1wTU06RG9jdW1lbnRJRD0i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"/>
+                  </pattern>
+                </defs>
+                <g id="icon" transform="translate(-576 -2571)">
+                  <rect id="impressao-digital" width="34" height="50" transform="translate(598 2586)" fill="url(#pattern)"/>
+                  <rect id="Retângulo_4" data-name="Retângulo 4" width="78" height="81" rx="15" transform="translate(576 2571)" fill="rgba(255,255,255,0.2)"/>
+                </g>
+              </svg>
+              <span>Desenvolvimento de Aplicativos Mobile</span>
+            </div>
+
+           <div class="btn-blue-services">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="81" viewBox="0 0 78 81">
               <defs>
                 <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 342 512">
@@ -126,7 +132,7 @@
               </g>
             </svg>
            <span>Manutenção de Aplicativos Mobile</span>
-          </button>
+          </d>
         </div>
       </div>
     </section>
@@ -134,71 +140,91 @@
     <section class="contato" id="contato">
       <div class="container">
         <h2>Contato</h2>
-        <div class="btn-redes-sociais">
-          <button class="btn-group btn-email"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Grupo_1" data-name="Grupo 1" transform="translate(-140 -3164)">
-              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
-                <rect width="260" height="260" rx="15" stroke="none"/>
-                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+        <div class="redes-sociais">
+          <a href="#" target="_blank" class="ico-email">
+            <i class="fas fa-at"></i>
+          </a>
+
+          <a href="#" target="_blank" class="ico-facebook">
+            <i class="fab fa-facebook-f"></i> 
+          </a>
+
+          <a href="#" target="_blank" class="ico-instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="#" target="_blank" class="ico-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a href="#" target="_blank" class="ico-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+<!--
+          <a href="#" target="_blank" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+              <g id="Grupo_2" data-name="Grupo 2" transform="translate(-140 -3164)">
+                <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(249,244,244,0.4)" stroke-width="3">
+                  <rect width="260" height="260" rx="15" stroke="none"/>
+                  <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+                </g>
+                <path id="whatsapp-brands" d="M111.663,51.084A65.1,65.1,0,0,0,9.234,129.62L0,163.333l34.5-9.058a64.882,64.882,0,0,0,31.1,7.915h.029c35.853,0,65.7-29.2,65.7-65.08,0-17.384-7.387-33.713-19.671-46.025ZM65.637,151.226a54,54,0,0,1-27.557-7.534l-1.964-1.173-20.462,5.365,5.453-19.964-1.29-2.052a54.1,54.1,0,0,1,84.077-67.015c10.2,10.231,16.475,23.8,16.446,38.257C120.34,126.953,95.451,151.226,65.637,151.226ZM95.3,110.712c-1.612-.821-9.615-4.749-11.111-5.277-1.5-.557-2.58-.821-3.664.821s-4.192,5.277-5.16,6.391c-.938,1.085-1.906,1.231-3.518.41-9.557-4.778-15.83-8.531-22.133-19.348-1.671-2.873,1.671-2.668,4.778-8.883a3.014,3.014,0,0,0-.147-2.844c-.41-.821-3.664-8.824-5.013-12.078-1.319-3.166-2.668-2.726-3.664-2.785-.938-.059-2.023-.059-3.107-.059a6.024,6.024,0,0,0-4.339,2.023A18.273,18.273,0,0,0,32.54,82.657c0,8,5.834,15.742,6.625,16.827.821,1.085,11.462,17.5,27.791,24.566,10.319,4.456,14.365,4.837,19.524,4.075,3.137-.469,9.615-3.928,10.964-7.739s1.349-7.065.938-7.739C98,111.914,96.917,111.5,95.3,110.712Z" transform="translate(204.333 3196.333)" fill="rgba(255,255,255,0.4)"/>
               </g>
-              <path id="at-solid" d="M73.091,17.388A71.233,71.233,0,0,0,17.459,73.05c-8.223,41.918,20.423,79.194,59.232,84.817A9.447,9.447,0,0,0,87.452,148.5v-.2a9.384,9.384,0,0,0-7.985-9.294A52.438,52.438,0,0,1,92.616,35C119.849,37.64,139.8,62.149,139.8,89.5v4.808a11.9,11.9,0,1,1-23.8,0V58.582a4.763,4.763,0,0,0-4.763-4.766H101.72a4.7,4.7,0,0,0-4.5,3.475,32.234,32.234,0,0,0-25.6-1.519A33.315,33.315,0,0,0,82.68,120.52a33,33,0,0,0,20.7-7.4,30.952,30.952,0,0,0,32.546,11.153c13.738-3.185,22.9-16.632,22.634-30.584V87.47A71.184,71.184,0,0,0,73.091,17.388ZM82.4,101.75a14.295,14.295,0,1,1,14.28-14.295A14.129,14.129,0,0,1,82.4,101.75Z" transform="translate(182.694 3207.028)" fill="rgba(255,255,255,0.4)"/>
-            </g>
-          </svg>
-          </button>
-          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Grupo_2" data-name="Grupo 2" transform="translate(-140 -3164)">
-              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(249,244,244,0.4)" stroke-width="3">
-                <rect width="260" height="260" rx="15" stroke="none"/>
-                <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
-              </g>
-              <path id="whatsapp-brands" d="M111.663,51.084A65.1,65.1,0,0,0,9.234,129.62L0,163.333l34.5-9.058a64.882,64.882,0,0,0,31.1,7.915h.029c35.853,0,65.7-29.2,65.7-65.08,0-17.384-7.387-33.713-19.671-46.025ZM65.637,151.226a54,54,0,0,1-27.557-7.534l-1.964-1.173-20.462,5.365,5.453-19.964-1.29-2.052a54.1,54.1,0,0,1,84.077-67.015c10.2,10.231,16.475,23.8,16.446,38.257C120.34,126.953,95.451,151.226,65.637,151.226ZM95.3,110.712c-1.612-.821-9.615-4.749-11.111-5.277-1.5-.557-2.58-.821-3.664.821s-4.192,5.277-5.16,6.391c-.938,1.085-1.906,1.231-3.518.41-9.557-4.778-15.83-8.531-22.133-19.348-1.671-2.873,1.671-2.668,4.778-8.883a3.014,3.014,0,0,0-.147-2.844c-.41-.821-3.664-8.824-5.013-12.078-1.319-3.166-2.668-2.726-3.664-2.785-.938-.059-2.023-.059-3.107-.059a6.024,6.024,0,0,0-4.339,2.023A18.273,18.273,0,0,0,32.54,82.657c0,8,5.834,15.742,6.625,16.827.821,1.085,11.462,17.5,27.791,24.566,10.319,4.456,14.365,4.837,19.524,4.075,3.137-.469,9.615-3.928,10.964-7.739s1.349-7.065.938-7.739C98,111.914,96.917,111.5,95.3,110.712Z" transform="translate(204.333 3196.333)" fill="rgba(255,255,255,0.4)"/>
-            </g>
-          </svg>
+            </svg>
+          </a>
           
-          </button>
-          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
-              <rect width="260" height="260" rx="15" stroke="none"/>
-              <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
-            </g>
-          </svg>
-          </button>
-          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Grupo_4" data-name="Grupo 4" transform="translate(-140 -3164)">
-              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+          <a href="#" target="_blank" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+              <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
                 <rect width="260" height="260" rx="15" stroke="none"/>
                 <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
               </g>
-              <path id="linkedin-brands" d="M131.857,32H10.111A10.187,10.187,0,0,0,0,42.238V163.762A10.187,10.187,0,0,0,10.111,174H131.857A10.214,10.214,0,0,0,142,163.762V42.238A10.214,10.214,0,0,0,131.857,32ZM42.917,153.714H21.871V85.947H42.949v67.767ZM32.394,76.692a12.2,12.2,0,1,1,12.2-12.2A12.208,12.208,0,0,1,32.394,76.692Zm89.416,77.022H100.763V120.75c0-7.861-.158-17.972-10.935-17.972-10.967,0-12.647,8.558-12.647,17.4v33.535H56.134V85.947H76.325V95.2h.285c2.821-5.325,9.7-10.935,19.937-10.935,21.3,0,25.262,14.042,25.262,32.3Z" transform="translate(199 3191)" fill="rgba(255,255,255,0.4)"/>
-            </g>
-          </svg>
-          </button>
-          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
-              <rect width="260" height="260" rx="15" stroke="none"/>
-              <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
-            </g>
-          </svg>
-                        </button>
-          <button class="btn-group"><svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
-            <g id="Grupo_6" data-name="Grupo 6" transform="translate(-140 -3164)">
-              <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+            </svg>
+          </a>
+
+          <a href="#" target="_blank" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+              <g id="Grupo_4" data-name="Grupo 4" transform="translate(-140 -3164)">
+                <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+                  <rect width="260" height="260" rx="15" stroke="none"/>
+                  <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+                </g>
+                <path id="linkedin-brands" d="M131.857,32H10.111A10.187,10.187,0,0,0,0,42.238V163.762A10.187,10.187,0,0,0,10.111,174H131.857A10.214,10.214,0,0,0,142,163.762V42.238A10.214,10.214,0,0,0,131.857,32ZM42.917,153.714H21.871V85.947H42.949v67.767ZM32.394,76.692a12.2,12.2,0,1,1,12.2-12.2A12.208,12.208,0,0,1,32.394,76.692Zm89.416,77.022H100.763V120.75c0-7.861-.158-17.972-10.935-17.972-10.967,0-12.647,8.558-12.647,17.4v33.535H56.134V85.947H76.325V95.2h.285c2.821-5.325,9.7-10.935,19.937-10.935,21.3,0,25.262,14.042,25.262,32.3Z" transform="translate(199 3191)" fill="rgba(255,255,255,0.4)"/>
+              </g>
+            </svg>
+          </a>
+          
+          <a href="#" target="_blank" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+              <g id="Retângulo_5" data-name="Retângulo 5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
                 <rect width="260" height="260" rx="15" stroke="none"/>
                 <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
               </g>
-              <path id="instagram-square-brands" d="M71,86.252A16.957,16.957,0,1,0,87.913,103.21,16.932,16.932,0,0,0,71,86.252Zm39.529-13.034a17.141,17.141,0,0,0-9.639-9.667c-6.656-2.635-22.5-2.044-29.89-2.044s-23.218-.614-29.893,2.044a17.141,17.141,0,0,0-9.639,9.667C28.844,79.894,29.43,95.8,29.43,103.205s-.586,23.292,2.051,29.99a17.141,17.141,0,0,0,9.639,9.667c6.656,2.635,22.5,2.044,29.893,2.044s23.214.614,29.89-2.044a17.141,17.141,0,0,0,9.639-9.667c2.647-6.676,2.038-22.586,2.038-29.987s.609-23.289-2.038-29.987ZM71,129.276a26,26,0,1,1,18.388-7.626A26.029,26.029,0,0,1,71,129.276ZM98.062,82.132a2.514,2.514,0,1,1,.013.013ZM126.786,32H15.214A15.237,15.237,0,0,0,0,47.259v111.9a15.237,15.237,0,0,0,15.214,15.259H126.786A15.237,15.237,0,0,0,142,159.158V47.259A15.237,15.237,0,0,0,126.786,32Zm-5.426,92.189c-.409,8.148-2.263,15.367-8.194,21.3s-13.122,7.83-21.237,8.218c-8.371.474-33.468.474-41.839,0-8.124-.41-15.3-2.273-21.237-8.218s-7.807-13.167-8.194-21.3c-.472-8.4-.472-33.573,0-41.962.409-8.148,2.241-15.367,8.194-21.3S42,53.121,50.09,52.733c8.371-.474,33.468-.474,41.839,0,8.124.41,15.319,2.273,21.237,8.218s7.807,13.167,8.194,21.315C121.832,90.632,121.832,115.784,121.359,124.189Z" transform="translate(199 3190.792)" fill="rgba(255,255,255,0.4)"/>
-            </g>
-          </svg>
-          </button>
+            </svg>
+          </a>
+          
+          <a href="#" target="_blank" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260">
+              <g id="Grupo_6" data-name="Grupo 6" transform="translate(-140 -3164)">
+                <g id="Retângulo_5" data-name="Retângulo 5" transform="translate(140 3164)" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3">
+                  <rect width="260" height="260" rx="15" stroke="none"/>
+                  <rect x="1.5" y="1.5" width="257" height="257" rx="13.5" fill="none"/>
+                </g>
+                <path id="instagram-square-brands" d="M71,86.252A16.957,16.957,0,1,0,87.913,103.21,16.932,16.932,0,0,0,71,86.252Zm39.529-13.034a17.141,17.141,0,0,0-9.639-9.667c-6.656-2.635-22.5-2.044-29.89-2.044s-23.218-.614-29.893,2.044a17.141,17.141,0,0,0-9.639,9.667C28.844,79.894,29.43,95.8,29.43,103.205s-.586,23.292,2.051,29.99a17.141,17.141,0,0,0,9.639,9.667c6.656,2.635,22.5,2.044,29.893,2.044s23.214.614,29.89-2.044a17.141,17.141,0,0,0,9.639-9.667c2.647-6.676,2.038-22.586,2.038-29.987s.609-23.289-2.038-29.987ZM71,129.276a26,26,0,1,1,18.388-7.626A26.029,26.029,0,0,1,71,129.276ZM98.062,82.132a2.514,2.514,0,1,1,.013.013ZM126.786,32H15.214A15.237,15.237,0,0,0,0,47.259v111.9a15.237,15.237,0,0,0,15.214,15.259H126.786A15.237,15.237,0,0,0,142,159.158V47.259A15.237,15.237,0,0,0,126.786,32Zm-5.426,92.189c-.409,8.148-2.263,15.367-8.194,21.3s-13.122,7.83-21.237,8.218c-8.371.474-33.468.474-41.839,0-8.124-.41-15.3-2.273-21.237-8.218s-7.807-13.167-8.194-21.3c-.472-8.4-.472-33.573,0-41.962.409-8.148,2.241-15.367,8.194-21.3S42,53.121,50.09,52.733c8.371-.474,33.468-.474,41.839,0,8.124.41,15.319,2.273,21.237,8.218s7.807,13.167,8.194,21.315C121.832,90.632,121.832,115.784,121.359,124.189Z" transform="translate(199 3190.792)" fill="rgba(255,255,255,0.4)"/>
+              </g>
+            </svg>
+          </a>
+          -->
         </div>       
       </div>
     </section>
 
     <footer>
       <div class="container">
-        <p>2022 - Developed by Aline Cardoso. Designed by Mateus Daniel.</p>
+        <p>2022 - Developed by <a href="#" target="_blank">Aline Cardoso</a>. Designed by <a href="https://mateusdanieel.github.io/" target="_blank">Mateus Daniel</a>.</p>
       </div>
     </footer>
+    <script src="./assets/js/font-awesome.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
