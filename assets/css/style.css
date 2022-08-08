@@ -1,61 +1,116 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-  font-family: 'Montserrat', sans-serif;
+html{
+    position: relative;
+    scroll-behavior: smooth;
 }
+
+* {
+    box-sizing: border-box !important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgba(255, 255, 255, .2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .4);
+}
+
+section:not(.home) {
+    padding: 100px 0 !important;
+}
+
+body{
+    background-color: #101010;
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+img{
+    max-width: 100%;
+}
+
 .container{
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 20px;
-}
-
-
-.navbar .container{
-display:flex;
-align-items: center;
-justify-content: center;
-}
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}   
 
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     background-color: #101010;
 }
 
-.menu{
+.navbar .container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 20px;
+}
+
+.navbar .container .logo{
+    display: block;
+    margin-right: auto;
+    color: #fff;
+    font-weight: 800;
+    font-size: 48px;
+    text-decoration: none;
+}
+
+#btMenu {
+    background-color: transparent;
+    color: #FFF;
+    outline: none;
+    border: 0;
+    margin-left: auto;
+    display: none;
+}
+
+.navbar .container .menu{
     list-style: none;
     display: flex;
     margin-right: auto;
 }
 
-li{
+.navbar .container .menu li{
     margin: 0 24px;
+    font-size: 16px;
 }
 
-a{
+.navbar .container .menu li a{
     font-weight: 300;
     text-decoration: none;
     color:#fff;
     opacity: 0.6;
 }
 
-a:hover{
+.navbar .container .menu li a:hover{
     color: #fff;
     opacity: 1;
+    cursor: pointer;
 }
-
-.logo{
-    display: block;
-    margin-right: auto;
-    color: #fff;
-    font-weight: 800;
-    font-size: 24px;
-}
-
+/*Fim navbar e começo home*/
 .home .container{
     height: 100vh;
     justify-content: center;
@@ -64,15 +119,266 @@ a:hover{
     align-items: center;
 }
 
-.home #conheca{
-    padding: 5px 30px;
+.home .container h1{
+    font-size: 55px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.home .conheca{
+    padding: 10px 35px;
     margin: 10px;
-    border-radius: 20px 20px;
+    border-radius: 80px;
     cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+/*fim home inicio sobre*/
+.sobre{
+    background-color: #1c1c1c;
+    padding: 50px 0;
+}
+.sobre .container .wrapper {
+    display: flex;
     
 }
 
-body{
-    background-color: #101010;
+.sobre .container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 54px;
+}
+
+.sobre .container .wrapper .left,
+.sobre .container .wrapper .right{
+ width: 50%;
+}
+.sobre .container .wrapper .left{
+    padding-right: 78px;
+}
+
+.sobre .container .wrapper .left img{
+ border-radius: 20px;
+}
+.sobre .container .wrapper .right{
+    padding: 0 20px;
+}
+
+.sobre .container .wrapper .right h3 {
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.sobre .container .wrapper .right p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.sobre .container .wrapper .right ul {
+    list-style: none;
+}
+
+.sobre .container .wrapper .right ul li {
+    line-height: 1.4;
+}
+/*Termina o sobre começa o serviços*/
+.servicos .container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.servicos .container .btn-servicos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+}
+
+.servicos .container .btn-servicos .btn-blue-services{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
     color: #fff;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 271px;
+    padding: 20px;
+    transition: .3s;
+    cursor: unset;
+    text-align: center;
+}
+
+.servicos .container .btn-servicos .btn-blue-services svg {
+    margin: 0 0 20px;
+}
+
+.servicos .container .btn-servicos .btn-blue-services:hover {
+    background-color: #2A93D5;
+    border-color: #2A93D5;
+}
+
+
+.servicos .container .btn-servicos button span{
+    margin-top: 37px;
+    margin-bottom: 27px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.servicos .container .btn-servicos button{
+    padding-top: 40px;
+    padding-bottom:37px;
+}
+
+/*Termina o serviços começa o contatos*/
+.contato{
+    background-color: #1c1c1c;
+    padding: 50px 0;
+}
+.contato .container h2{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.contato .container .redes-sociais{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.contato .container .redes-sociais a {
+    font-size: 72px;
+    color: rgba(255, 255, 255, .6);
+    border: 1px solid rgba(255, 255, 255, .6);
+    width: 155px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.contato .container .redes-sociais a.ico-whatsapp:hover {
+    color: #25d366;
+    border-color: #25d366;
+}
+
+.contato .container .redes-sociais a.ico-email:hover {
+    color: #6dc5dc;
+    border-color: #6dc5dc;
+}
+
+.contato .container .redes-sociais a.ico-facebook:hover {
+    color: #1877f2;
+    border-color: #1877f2;
+}
+
+.contato .container .redes-sociais a.ico-instagram:hover {
+    color: #e1306c;
+    border-color: #e1306c;
+}
+
+.contato .container .redes-sociais a.ico-linkedin:hover {
+    color: #00a0dc;
+    border-color: #00a0dc;
+}
+
+/*Termina o Contatos começa o footer*/
+
+footer p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    
+    .sobre .container .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .sobre .container .wrapper .left {
+        padding-right: 0;
+    }
+
+    .sobre .container .wrapper .left, .sobre .container .wrapper .right {
+        width: 100%;
+    }
+
+    .sobre .container .wrapper .right {
+        margin: 20px 0 0;
+    }
+
+    .servicos .container .btn-servicos {
+        flex-wrap: wrap;
+    }
+
+    .servicos .container .btn-servicos .btn-blue-services {
+        margin: 20px 0 0;
+    }
+
+    .servicos .container .btn-servicos .btn-blue-services:first-child {
+        margin: 0;
+    }
+
+    .contato .container .redes-sociais {
+        flex-wrap: wrap;
+    }
+
+    .contato .container .redes-sociais a {
+        margin: 0 0 20px;
+    }
+
+    .navbar .container .menu {
+        position: absolute;
+        top: 82px;
+        background-color: #101010;
+        width: 100%;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+
+    .navbar .container .menu.active {
+        max-height: 100vh;
+    }
+
+    .navbar .container .menu li {
+        margin: 20px;
+    }
+
+    #btMenu {
+        display: block;
+    }
+
+    .animation-sub-title {
+        font-size: 18px !important;
+    }
 }
